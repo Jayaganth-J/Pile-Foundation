@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Navbar from './components/Navbar'
 import Preloader from './components/Preloader'
 import useScrollAnimations from './hooks/useScrollAnimations'
+import { useTheme } from './hooks/useTheme'
 import AboutSection from './sections/AboutSection'
 import ContactSection from './sections/ContactSection'
 import FooterSection from './sections/FooterSection'
@@ -14,6 +15,7 @@ import WhyChooseUsSection from './sections/WhyChooseUsSection'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
+  useTheme()
   useScrollAnimations(!isLoading)
 
   useEffect(() => {

@@ -23,6 +23,21 @@
   --motion-slow: 700ms;
 }
 
+[data-theme="light"] {
+  --bg: #ffffff;
+  --surface: rgba(255, 255, 255, 0.9);
+  --surface-soft: rgba(245, 245, 250, 0.8);
+  --text: #1a1a2e;
+  --muted: #666;
+  --line: rgba(100, 100, 120, 0.1);
+  --heading: #0d0d1f;
+  --accent: #ff6a00;
+  --accent-soft: #ffe5cc;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(100, 100, 120, 0.15);
+  --glass-shadow: 0 20px 48px rgba(0, 0, 0, 0.08);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -41,6 +56,10 @@ body {
     radial-gradient(circle at 15% 16%, rgba(255, 106, 0, 0.12), transparent 28%),
     radial-gradient(circle at 84% 22%, rgba(129, 185, 220, 0.11), transparent 26%),
     url('https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?auto=format&fit=crop&w=2400&q=80') center / cover fixed no-repeat;
+}
+
+[data-theme="light"] body {
+  background: linear-gradient(135deg, #f5f5fa 0%, #ffffff 100%);
 }
 
 body::before {
@@ -66,6 +85,19 @@ body::after {
     radial-gradient(circle at 76% 68%, rgba(77, 131, 168, 0.2), transparent 34%),
     linear-gradient(rgba(7, 11, 16, 0), rgba(7, 11, 16, 0.58));
   filter: blur(6px);
+}
+
+[data-theme="light"] body::before {
+  background-image:
+    linear-gradient(rgba(100, 100, 120, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 100, 120, 0.04) 1px, transparent 1px);
+}
+
+[data-theme="light"] body::after {
+  background:
+    radial-gradient(circle at 20% 30%, rgba(255, 106, 0, 0.08), transparent 32%),
+    radial-gradient(circle at 76% 68%, rgba(77, 131, 168, 0.08), transparent 34%),
+    linear-gradient(rgba(255, 255, 255, 0), rgba(250, 250, 255, 0.3));
 }
 
 #root {
