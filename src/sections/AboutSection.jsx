@@ -6,7 +6,7 @@ function AboutSection() {
   return (
     <section id="about" className="section section-alt scrub-section">
       <div className="container">
-        <Reveal className="scrub-text">
+        <Reveal className="section-head scrub-text">
           <p className="section-kicker">About C.C. Pile Foundation</p>
           <h2>Engineered Reliability for Every Ground Condition</h2>
           <p className="section-lead">

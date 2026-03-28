@@ -22,13 +22,13 @@ function VideoSection() {
   }, [])
 
   return (
-    <section id="video" className="section video-section scrub-section" ref={sectionRef}>
+    <section id="video" className="section section-alt video-section scrub-section" ref={sectionRef}>
       <div className="container">
-        <Reveal className="scrub-text">
+        <Reveal className="section-head scrub-text">
           <p className="section-kicker">Video Showcase</p>
           <h2>Our Work in Action</h2>
           <p className="section-lead">
-            A quick cinematic glimpse into our on-site foundation execution, equipment precision, and field-tested workflow quality.
+            A direct field view of our equipment, workflow discipline, and execution standards during real site operations.
           </p>
         </Reveal>
 

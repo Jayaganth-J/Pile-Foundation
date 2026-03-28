@@ -1,25 +1,41 @@
 import Reveal from '../components/Reveal'
+import { HiDevicePhoneMobile, HiEnvelope, HiMapPin, HiPhone } from 'react-icons/hi2'
 import RippleButton from '../components/RippleButton'
 import { company } from '../data/content'
 
 function ContactSection() {
   return (
-    <section id="contact" className="section section-alt scrub-section">
+    <section id="contact" className="section scrub-section">
       <div className="container">
-        <Reveal className="scrub-text">
+        <Reveal className="section-head scrub-text">
           <p className="section-kicker">Contact Us</p>
           <h2>Plan Your Foundation Work with Confidence</h2>
+          <p className="section-lead">
+            Share your project scope and site location. Our team will respond with practical, engineering-led recommendations.
+          </p>
         </Reveal>
 
         <div className="contact-grid">
           <Reveal className="contact-card scrub-card" >
             <h3>Contact Details</h3>
-            <p>{company.address}</p>
-            <p>
-              Mobile: {company.phones[0]} / {company.phones[1]}
+            <p className="contact-line">
+              <HiMapPin className="contact-icon" />
+              <span>{company.address}</span>
             </p>
-            <p>Landline: {company.landline}</p>
-            <p>Email: {company.email}</p>
+            <p className="contact-line">
+              <HiDevicePhoneMobile className="contact-icon" />
+              <span>
+                Mobile: {company.phones[0]} / {company.phones[1]}
+              </span>
+            </p>
+            <p className="contact-line">
+              <HiPhone className="contact-icon" />
+              <span>Landline: {company.landline}</span>
+            </p>
+            <p className="contact-line">
+              <HiEnvelope className="contact-icon" />
+              <span>Email: {company.email}</span>
+            </p>
             <iframe
               title="C.C. Pile Foundation Location"
               src="https://maps.google.com/maps?q=Thiruverkadu%20Ayapakkam%20Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"

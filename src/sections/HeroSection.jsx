@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import RippleButton from '../components/RippleButton'
+import { company } from '../data/content'
 
 function HeroSection() {
   const [offsetY, setOffsetY] = useState(0)
@@ -16,14 +17,13 @@ function HeroSection() {
       <div className="hero-bg" style={{ transform: `translateY(${offsetY}px)` }} />
       <div className="hero-grid" />
       <div className="container hero-content">
-        <p className="eyebrow fade-up delay-1">
-          Trusted Foundation Engineering Since Decades
-        </p>
+        <p className="eyebrow fade-up delay-1">Engineering Excellence in Pile Foundations</p>
         <h1 className="fade-up delay-2">
-          Strong Foundations.<br />Strong Future.
+          {company.name}
         </h1>
+        <p className="hero-subtitle fade-up delay-3">Strong Foundations. Strong Future.</p>
         <p className="hero-copy fade-up delay-3">
-          C.C. Pile Foundation delivers high-performance piling and drilling solutions for modern infrastructure, commercial, and industrial projects.
+          We deliver precision piling, drilling, and structural ground solutions for high-value infrastructure, commercial towers, and industrial facilities.
         </p>
         <RippleButton
           as="a"

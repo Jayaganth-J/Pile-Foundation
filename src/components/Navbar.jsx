@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { HiBars3, HiXMark } from 'react-icons/hi2'
 import { company, navLinks } from '../data/content'
 import RippleButton from './RippleButton'
+import logo from '../assets/ccpf-logo.png'
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -38,7 +39,8 @@ function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container nav-inner">
         <a href="#home" className="brand" onClick={closeMenu}>
-          {company.name}
+          <img className="brand-logo" src={logo} alt="C.C. Pile Foundation logo" />
+          <span>{company.name}</span>
         </a>
 
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>

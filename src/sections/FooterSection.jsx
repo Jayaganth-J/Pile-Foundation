@@ -1,11 +1,15 @@
 import { company } from '../data/content'
+import logo from '../assets/ccpf-logo.png'
 
 function FooterSection() {
   return (
     <footer className="footer">
       <div className="container footer-grid">
         <div>
-          <h3>{company.name}</h3>
+          <div className="footer-brand">
+            <img className="footer-logo" src={logo} alt="C.C. Pile Foundation logo" />
+            <h3>{company.name}</h3>
+          </div>
           <p>Engineering-grade foundation solutions for long-term structural performance.</p>
         </div>
         <div>

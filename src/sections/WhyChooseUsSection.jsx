@@ -6,7 +6,7 @@ function WhyChooseUsSection() {
   return (
     <section id="why-us" className="section scrub-section story-pin-section">
       <div className="container split">
-        <Reveal className="story-pin-title scrub-text">
+        <Reveal className="section-head story-pin-title scrub-text">
           <p className="section-kicker">Why Choose Us</p>
           <h2>Built on Trust, Delivered with Engineering Discipline</h2>
           <p className="section-lead">

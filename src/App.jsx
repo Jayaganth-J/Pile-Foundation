@@ -31,14 +31,19 @@ function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.92, ease: [0.16, 1, 0.3, 1] }}
         >
+          <div className="site-atmosphere" aria-hidden="true">
+            <span className="bg-blob blob-1 parallax-layer" data-speed="0.12" />
+            <span className="bg-blob blob-2 parallax-layer" data-speed="0.18" />
+            <span className="bg-blob blob-3 parallax-layer" data-speed="0.09" />
+          </div>
           <Navbar />
           <main>
             <HeroSection />
             <AboutSection />
             <ServicesSection />
             <ProjectsSection />
-            <VideoSection />
             <WhyChooseUsSection />
+            <VideoSection />
             <ContactSection />
           </main>
           <FooterSection />

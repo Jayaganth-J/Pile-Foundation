@@ -8,9 +8,12 @@ function ServicesSection() {
   return (
     <section id="services" className="section scrub-section">
       <div className="container">
-        <Reveal className="scrub-text">
+        <Reveal className="section-head scrub-text">
           <p className="section-kicker">Core Services</p>
           <h2>Precision Work Backed by Site-Proven Expertise</h2>
+          <p className="section-lead">
+            Every solution is tailored to soil condition, load requirement, and project constraints with strict quality and safety controls.
+          </p>
         </Reveal>
 
         <div className="service-grid">

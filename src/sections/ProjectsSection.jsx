@@ -1,23 +1,17 @@
-import { useEffect, useState } from 'react'
 import Reveal from '../components/Reveal'
 import { projects } from '../data/content'
 
 function ProjectsSection() {
-  const [offsetY, setOffsetY] = useState(0)
-
-  useEffect(() => {
-    const onScroll = () => setOffsetY(window.scrollY * 0.08)
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
-
   return (
     <section id="projects" className="section section-alt scrub-section">
-      <div className="projects-parallax parallax-layer" data-speed="0.45" style={{ transform: `translateY(${offsetY}px)` }} />
+      <div className="projects-parallax parallax-layer" data-speed="0.45" />
       <div className="container">
-        <Reveal className="scrub-text">
-          <p className="section-kicker">Selected Projects</p>
+        <Reveal className="section-head scrub-text">
+          <p className="section-kicker">Projects / Work Gallery</p>
           <h2>Execution Quality You Can See</h2>
+          <p className="section-lead">
+            A curated portfolio of foundation and piling projects delivered across industrial, urban, and public infrastructure sectors.
+          </p>
         </Reveal>
 
         <div className="project-grid">

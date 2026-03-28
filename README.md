@@ -43,3 +43,15 @@ Premium React website for C.C. Pile Foundation, built with Vite and modern anima
 	npm run dev
 3. Build for production:
 	npm run build
+
+## Deployment (GitHub Pages)
+
+This project is configured to auto-deploy to GitHub Pages when changes are pushed to `main`.
+
+1. Push your latest code to `main`.
+2. In GitHub repo settings, go to Pages and ensure the source is set to `GitHub Actions`.
+3. Wait for the `Deploy Vite site to Pages` workflow to complete.
+
+Live URL:
+
+- https://jayaganth-j.github.io/Pile-Foundation/
